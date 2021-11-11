@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d88c308d838c43e19915920da52dbdc4" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AddBeneficiary" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_BranchSendPayment" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ComplaintRegister" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ComplaintType" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_CustomerWallet" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Designation" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_MasterToken" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_MoneySenderDetails" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_OrderMoneyTransfer" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PanCard" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PancardServiceRequest" Width="1.5" PointX="8.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Webhook" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AccountingDocument" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AddPartner" Width="1.5" PointX="12.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AdminUser" Width="1.5" PointX="12.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AEPS_Commission_Chart" Width="1.5" PointX="10.75" PointY="12.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AEPSServiceRequest" Width="1.5" PointX="12.75" PointY="11.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AsignTask" Width="1.5" PointX="4.75" PointY="13.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AssignArea" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AssignMenu" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AssignOrder" Width="1.5" PointX="14.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_BusinessIncome" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_CapitalIncome" Width="1.5" PointX="6.75" PointY="14.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_City" Width="1.5" PointX="14.75" PointY="10.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.tb_Complaint" Width="1.5" PointX="14.75" PointY="13.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Country" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_DigitalSignature" Width="1.5" PointX="2.75" PointY="16.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_DigitalSignatureDocument" Width="1.5" PointX="16.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_DocumentApprove" Width="1.5" PointX="16.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Downloads" Width="1.5" PointX="8.75" PointY="16.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_DTHRechargeCommission" Width="1.5" PointX="16.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Employee" Width="1.5" PointX="10.75" PointY="16.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_FinalSubmission" Width="1.5" PointX="16.75" PointY="12.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_GSTAndAccounting" Width="1.5" PointX="12.75" PointY="17.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_GSTRelatedServices" Width="1.5" PointX="14.75" PointY="17.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_GSTService" Width="1.5" PointX="16.75" PointY="17.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_GSTServiceDocument" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_HouseIncome" Width="1.5" PointX="18.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_HousingLoanBank" Width="1.5" PointX="18.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_IncomeTaxReturn" Width="1.5" PointX="18.75" PointY="11.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ITR" Width="1.5" PointX="18.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ITROtherDocument" Width="1.5" PointX="4.75" PointY="19.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_LatestUpdate" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Marketing" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.tb_MobileRecharge_Commission" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Notification" Width="1.5" PointX="20.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_OrderCompilation" Width="1.5" PointX="20.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_OrderDiscussion" Width="1.5" PointX="20.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_OrderPayment" Width="1.5" PointX="20.75" PointY="13.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_OtherServices" Width="1.5" PointX="20.75" PointY="17.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Pages" Width="1.5" PointX="8.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PartnerDocument" Width="1.5" PointX="10.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PartnerProfile" Width="1.5" PointX="12.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PartnerTask" Width="1.5" PointX="14.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PayoutCharges" Width="1.5" PointX="20.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_PreorPostpaid" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Profession" Width="1.5" PointX="2.75" PointY="22.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_RegistrationStatus" Width="1.5" PointX="22.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_SalaryIncome" Width="1.5" PointX="4.75" PointY="22.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServiceOrder" Width="1.5" PointX="22.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServiceOrderBank" Width="1.5" PointX="22.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServiceOrderDeduction" Width="1.5" PointX="16.75" PointY="22.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServiceOrderDocument" Width="1.5" PointX="22.75" PointY="19.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServiceOrderIncome" Width="1.5" PointX="22.75" PointY="23.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServiceOrderSubmission" Width="1.5" PointX="24.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServicePackage" Width="1.5" PointX="24.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ServicePrice" Width="1.5" PointX="24.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_State" Width="1.5" PointX="6.75" PointY="24.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Tahsils" Width="1.5" PointX="24.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_TradingIncome" Width="1.5" PointX="24.75" PointY="12.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Trash" Width="1.5" PointX="24.75" PointY="16.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.tb_TravelCommission" Width="1.5" PointX="0.75" PointY="25.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_UpdateForPartner" Width="1.5" PointX="8.75" PointY="25.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_UserServicePackage" Width="1.5" PointX="18.75" PointY="25.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_UTIPAN" Width="1.5" PointX="26.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.tb_walletdeduction" Width="1.5" PointX="2.75" PointY="26.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Registration" Width="1.5" PointX="11.375" PointY="26.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.AEPSHistory" Width="1.5" PointX="13.375" PointY="26.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_AEPSHistory" Width="1.5" PointX="15.375" PointY="26.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Recharge" Width="1.5" PointX="27.375" PointY="4.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_CallBackUPI" Width="1.5" PointX="9.375" PointY="8.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_InternalWalletTransfer" Width="1.5" PointX="5.375" PointY="27.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_Pay2AllTransactionHistory" Width="1.5" PointX="27.375" PointY="11.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_WalletDeductionHistory" Width="1.5" PointX="27.375" PointY="14.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_ZuelPay" Width="1.5" PointX="27.375" PointY="18.75" />
+        <EntityTypeShape EntityType="DB_9A460E_ereturnModel.TB_UPICollect" Width="1.5" PointX="27.375" PointY="21.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

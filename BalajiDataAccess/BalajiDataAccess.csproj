@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1725A53E-39C3-42FA-81FC-331FD8DC4798}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BalajiDataAccess</RootNamespace>
+    <AssemblyName>BalajiDataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AEPSHistory.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyEreturnEntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyEreturnEntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyEreturnEntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyEreturnEntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyEreturnEntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TB_AccountingDocument.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AddBeneficiary.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AddPartner.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AdminUser.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AEPSHistory.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AEPSServiceRequest.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AEPS_Commission_Chart.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AsignTask.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AssignArea.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AssignMenu.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AssignOrder.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_BranchSendPayment.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_BusinessIncome.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CallBackUPI.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CapitalIncome.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_City.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Complaint.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ComplaintRegister.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ComplaintType.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Country.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CustomerWallet.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Designation.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DigitalSignature.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DigitalSignatureDocument.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DocumentApprove.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Downloads.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DTHRechargeCommission.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Employee.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_FinalSubmission.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_GSTAndAccounting.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_GSTRelatedServices.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_GSTService.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_GSTServiceDocument.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_HouseIncome.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_HousingLoanBank.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_IncomeTaxReturn.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_InternalWalletTransfer.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ITR.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ITROtherDocument.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_LatestUpdate.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Marketing.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_MasterToken.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_MobileRecharge_Commission.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_MoneySenderDetails.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Notification.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_OrderCompilation.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_OrderDiscussion.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_OrderMoneyTransfer.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_OrderPayment.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_OtherServices.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Pages.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PanCard.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PancardServiceRequest.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PartnerDocument.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PartnerProfile.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PartnerTask.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Pay2AllTransactionHistory.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PayoutCharges.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PreorPostpaid.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Profession.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Recharge.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Registration.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_RegistrationStatus.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SalaryIncome.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServiceOrder.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServiceOrderBank.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServiceOrderDeduction.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServiceOrderDocument.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServiceOrderIncome.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServiceOrderSubmission.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServicePackage.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ServicePrice.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_State.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Tahsils.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_TradingIncome.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Trash.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_TravelCommission.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_UpdateForPartner.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_UPICollect.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_UserServicePackage.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_UTIPAN.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_walletdeduction.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_WalletDeductionHistory.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Webhook.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_ZuelPay.cs">
+      <DependentUpon>MyEreturnEntityModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MyEreturnEntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MyEreturnEntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MyEreturnEntityModel.edmx.diagram">
+      <DependentUpon>MyEreturnEntityModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyEreturnEntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyEreturnEntityModel.edmx</DependentUpon>
+      <LastGenOutput>MyEreturnEntityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MyEreturnEntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyEreturnEntityModel.edmx</DependentUpon>
+      <LastGenOutput>MyEreturnEntityModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

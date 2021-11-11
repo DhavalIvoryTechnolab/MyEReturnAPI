@@ -12,6 +12,7 @@ namespace BalajiInstitute
     {
         public void Configuration(IAppBuilder app)
         {
+            //configure things here
             ConfigureAuth(app);
         }
     }
